@@ -28,30 +28,29 @@ body {
 .logo {
     width: 30%;
     background-image: url('wooods.jpg');
-
     background-size: cover;
-
     background-position: center;
-    height: auto;
-
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.logo img {
-    max-width: 80%;
-    max-height: 80%;
+    justify-content: center; /* Centra todo el contenido dentro de la columna */
+    height: 100vh; /* Asegura que la sección ocupe toda la altura de la pantalla */
 }
 
 .logo .logo-image {
-    font-family: 'Norse Bold', sans-serif;
+    display: flex; /* Flexbox para alinear los elementos en una línea */
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Alinea el logo y texto en el centro */
+    text-align: center; /* Asegura que el texto esté centrado */
     color: white;
-    font-size: 2rem;
-    text-align: center;
+    font-family: 'Norse Bold', sans-serif;
+    font-size: 5rem; /* Aumenta el tamaño del texto */
+    width: 80%; /* Asegura que los elementos dentro de .logo-image no ocupen todo el ancho */
 }
 
-
+.logo img {
+    max-width: 50%; /* Ajusta el logo para que no ocupe todo el espacio */
+    height: auto;
+}
 /* Signup Section */
 .signup {
     width: 70%;
